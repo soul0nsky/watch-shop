@@ -1,8 +1,8 @@
 require('dotenv').config();
-
 const express = require('express');
 const createError = require('http-errors');
 const logger = require('morgan');
+const fs = require('fs');
 const path = require('path');
 const { Sequelize } = require('sequelize');
 
@@ -10,7 +10,6 @@ const session = require('express-session');
 const FileStore = require('session-file-store')(session);
 
 const sequelize = new Sequelize({ dialect: 'postgres' });
-// Импортируем созданный в отдельный файлах рутеры.
 const mainRouter = require('./routes/router.main');
 const registerRouter = require('./routes/router.register');
 
@@ -31,17 +30,17 @@ const sessionConfig = {
 
 app.use(session(sessionConfig));
 
-// Подключаем middleware morgan с режимом логирования "dev", чтобы для каждого HTTP-запроса на
-// сервер в консоль выводилась информация об этом запросе.
+const accessLogStream = fs.createWriteStream(
+  path.join(__dirname, 'access.log'),
+  { flags: 'a' },
+);
+
+app.use(logger('combined', { stream: accessLogStream }));
 app.use(logger('dev'));
-// Подключаем middleware, которое сообщает epxress, что в папке "ПапкаПроекта/public" будут
-// находится статические файлы, т.е.файлы доступные для скачивания из других приложений.
+
 app.use(express.static(path.join(__dirname, '../public')));
-// Подключаем middleware, которое позволяет читать содержимое body из HTTP-запросов
-// типа POST, PUT и DELETE.
+
 app.use(express.urlencoded({ extended: true }));
-// Подключаем middleware, которое позволяет читать переменные JavaScript, сохранённые
-// в формате JSON в body HTTP - запроса.
 app.use(express.json());
 
 app.use('/', mainRouter);
@@ -52,17 +51,10 @@ app.use((req, res, next) => {
   next();
 });
 
-// Если HTTP-запрос дошёл до этой строчки, значит ни один из ранее встречаемых рутов не ответил
-// на запрос.Это значит, что искомого раздела просто нет на сайте.Для таких ситуаций используется
-// код ошибки 404. Создаём небольшое middleware, которое генерирует соответствующую ошибку.
 app.use((req, res, next) => {
   const error = createError(404, 'Запрашиваемой страницы не существует на сервере.');
   next(error);
 });
-
-// app.listen(PORT, () => {
-//   console.log(`server started PORT: ${PORT}`);
-// });
 
 app.listen(PORT, async () => {
   try {
