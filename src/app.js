@@ -4,12 +4,12 @@ const createError = require('http-errors');
 const logger = require('morgan');
 const fs = require('fs');
 const path = require('path');
-const { Sequelize } = require('sequelize');
 
 const session = require('express-session');
 const FileStore = require('session-file-store')(session);
+const { sequelize } = require('../db/models');
 
-const sequelize = new Sequelize({ dialect: 'postgres' });
+// const sequelize = new Sequelize({ dialect: 'postgres' });
 const mainRouter = require('./routes/router.main');
 const registerRouter = require('./routes/router.register');
 
