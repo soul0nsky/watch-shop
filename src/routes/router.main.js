@@ -4,8 +4,8 @@ const Main = require('../views/Main');
 
 router.get('/', async (req, res) => {
   try {
-    const user = req.session?.userName;
-    renderTemplate(Main, { user }, res);
+    const admin = req.session?.admin;
+    renderTemplate(Main, { admin }, res);
   } catch (error) {
     console.log('======> error', error);
     // renderTemplate(Error, {
