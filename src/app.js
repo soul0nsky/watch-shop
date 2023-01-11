@@ -21,7 +21,7 @@ const sessionConfig = {
   name: 'NewCookie',
   store: new FileStore(),
   secret: SESSION_SECRET ?? 'Секретное слово',
-  resave: false, 
+  resave: false,
   saveUninitialized: false,
   cookie: {
     maxAge: 172800000,
