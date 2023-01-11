@@ -18,7 +18,7 @@ module.exports = function Layout({ children, admin }) {
         {admin ? (
           <nav className="navbar bg-light container-fluid" style={{ justifyContent: 'space-evenly' }}>
             <a href="/">
-              <button className="btn btn-outline-success me-2" type="button">Main</button>
+              <button className="btn btn-outline-success btn-one me-2" type="button">Main</button>
             </a>
             <a href="/admin/logout">
               <button className="btn btn-sm btn-outline-secondary" type="button">Logout</button>
@@ -28,19 +28,15 @@ module.exports = function Layout({ children, admin }) {
             </a>
           </nav>
         ) : (
-          <nav className="navbar bg-light container-fluid" style={{ justifyContent: 'space-evenly' }}>
-            <a href="/">
-              <button className="btn btn-outline-success me-2" type="button">Main</button>
-            </a>
-            <a href="/admin/login">
-              <button className="btn btn-sm btn-outline-secondary" type="button">Login</button>
-            </a>
-            <a href="/">
-              <button className="btn btn-sm btn-outline-secondary" type="button">Your button</button>
-            </a>
-          </nav>
+          <div className="container gray highlightTextIn">
+            <nav className="navbar" style={{ justifyContent: 'space-evenly' }}>
+              <a href="/" alt="HOME">HOME</a>
+              <a href="/admin/login" alt="LOGIN">LOGIN</a>
+              <a href="#0" alt="ABOUT">ABOUT</a>
+              <a href="#0" alt="CONTACT">CONTACT</a>
+            </nav>
+          </div>
         )}
-
         { children }
       </body>
       <footer className="py-3 my-4">
