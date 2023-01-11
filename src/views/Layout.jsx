@@ -16,36 +16,38 @@ module.exports = function Layout({ children, admin }) {
       </head>
       <body>
         {admin ? (
-          <nav className="navbar bg-light container-fluid" style={{ justifyContent: 'space-evenly' }}>
-            <a href="/">
-              <button className="btn btn-outline-success btn-one me-2" type="button">Main</button>
-            </a>
-            <a href="/admin/logout">
-              <button className="btn btn-sm btn-outline-secondary" type="button">Logout</button>
-            </a>
-            <a href="/">
-              <button className="btn btn-sm btn-outline-secondary" type="button">Your button</button>
-            </a>
+          <nav className="navbar bg-body-tertiary">
+            <div className="container-fluid">
+              <a href="/" className="btn btn-outline-primary">Главная</a>
+              <form className="d-flex " role="search">
+                <a href="/admin/logout" className="btn btn-outline-danger">logout</a>
+                <a href="#0" className="btn btn-outline-primary" type="submit">О нас</a>
+                <a href="#0" className="btn btn-outline-primary" type="submit">Контакты</a>
+              </form>
+            </div>
           </nav>
         ) : (
-          <div className="container gray highlightTextIn">
-            <nav className="navbar" style={{ justifyContent: 'space-evenly' }}>
-              <a href="/" alt="HOME">HOME</a>
-              <a href="/admin/login" alt="LOGIN">LOGIN</a>
-              <a href="#0" alt="ABOUT">ABOUT</a>
-              <a href="#0" alt="CONTACT">CONTACT</a>
-            </nav>
-          </div>
+          <nav className="navbar bg-body-tertiary">
+            <div className="container-fluid">
+              <a href="/" className="btn btn-outline-primary">Главная</a>
+              <form className="d-flex " role="search">
+                <a href="/admin/login" className="btn btn-outline-danger">admin</a>
+                <a href="#0" className="btn btn-outline-primary" type="submit">О нас</a>
+                <a href="#0" className="btn btn-outline-primary" type="submit">Контакты</a>
+              </form>
+            </div>
+          </nav>
+
         )}
         { children }
       </body>
       <footer className="py-3 my-4">
         <ul className="nav justify-content-center border-bottom pb-3 mb-3">
-          <li className="nav-item"><a href="#" className="nav-link px-2 text-muted">Home</a></li>
-          <li className="nav-item"><a href="#" className="nav-link px-2 text-muted">Features</a></li>
-          <li className="nav-item"><a href="#" className="nav-link px-2 text-muted">Pricing</a></li>
-          <li className="nav-item"><a href="#" className="nav-link px-2 text-muted">FAQs</a></li>
-          <li className="nav-item"><a href="#" className="nav-link px-2 text-muted">About</a></li>
+          <li className="nav-item"><a href="#0" className="nav-link px-2 text-muted">Home</a></li>
+          <li className="nav-item"><a href="#0" className="nav-link px-2 text-muted">Features</a></li>
+          <li className="nav-item"><a href="#0" className="nav-link px-2 text-muted">Pricing</a></li>
+          <li className="nav-item"><a href="#0" className="nav-link px-2 text-muted">FAQs</a></li>
+          <li className="nav-item"><a href="#0" className="nav-link px-2 text-muted">About</a></li>
         </ul>
         <p className="text-center text-muted">&copy; 2022 Company, Inc</p>
       </footer>
