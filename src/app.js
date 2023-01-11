@@ -7,8 +7,8 @@ const path = require('path');
 
 const session = require('express-session');
 const FileStore = require('session-file-store')(session);
-
 const { sequelize } = require('../db/models');
+
 const mainRouter = require('./routes/router.main');
 const loginRouter = require('./routes/router.login');
 const logoutRouter = require('./routes/router.logout');
