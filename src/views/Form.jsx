@@ -4,30 +4,34 @@ const Layout = require('./Layout');
 module.exports = function Form() {
   return (
     <Layout>
-      <div className="form container registration">
+      <div className="form-container registration">
         <form action="/form" method="POST">
+          <h3>Связаться с нами</h3>
           <div className="form-outline mb-4">
+            <label className="form-label" htmlFor="form2Example1">
+              Имя
+            </label>
             <input
               type="text"
               id="form2Example1"
               className="form-control"
               name="username"
             />
-            <label className="form-label" htmlFor="form2Example1">
-              Имя
-            </label>
           </div>
           <div className="form-outline mb-4">
+            <label className="form-label" htmlFor="form2Example2">
+              Электронная почта
+            </label>
             <input
               type="text"
               id="form2Example2"
               className="form-control"
               name="email"
             />
-            <label className="form-label" htmlFor="form2Example2">
-              Электронная почта
-            </label>
           </div>
+          <label className="form-label" htmlFor="form2Example2">
+            Телефон
+          </label>
           <div className="form-outline mb-4">
             <input
               type="text"
@@ -35,9 +39,6 @@ module.exports = function Form() {
               className="form-control"
               name="phone"
             />
-            <label className="form-label" htmlFor="form2Example2">
-              Телефон
-            </label>
           </div>
           <button
             type="submit"
@@ -46,7 +47,41 @@ module.exports = function Form() {
           >
             Отправить
           </button>
-
+          <div className="form-outline mb-4">
+            <label className="form-label" htmlFor="form2Example1">
+              img.net
+            </label>
+            <textarea
+              type="text"
+              id="form2Example1"
+              className="form-control"
+              name="username"
+              placeholder="Описание часов"
+            />
+          </div>
+          <div className="form-outline mb-4">
+            <input
+              type="text"
+              id="form2Example1"
+              className="form-control"
+              name="username"
+              placeholder="Вставить ссылку"
+            />
+          </div>
+          <button
+            type="submit"
+            data-type="login-button"
+            className="btn btn-primary btn-block mb-4"
+          >
+            Загрузить
+          </button>
+          <button
+            type="submit"
+            data-type="login-button"
+            className="btn btn-primary btn-block mb-4"
+          >
+            Отправить
+          </button>
         </form>
       </div>
     </Layout>
