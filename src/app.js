@@ -12,6 +12,7 @@ const { sequelize } = require('../db/models');
 const mainRouter = require('./routes/router.main');
 const loginRouter = require('./routes/router.login');
 const logoutRouter = require('./routes/router.logout');
+const formRouter = require('./routes/router.form');
 
 const app = express();
 const { PORT, SESSION_SECRET } = process.env;
@@ -44,6 +45,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use('/', mainRouter);
+app.use('/form', formRouter);
 app.use('/admin', loginRouter);
 app.use('/admin', logoutRouter);
 
