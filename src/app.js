@@ -12,6 +12,7 @@ const { sequelize } = require('../db/models');
 // const sequelize = new Sequelize({ dialect: 'postgres' });
 const mainRouter = require('./routes/router.main');
 const registerRouter = require('./routes/router.register');
+const formRouter = require('./routes/router.form');
 
 const app = express();
 const { PORT, SESSION_SECRET } = process.env;
@@ -45,6 +46,7 @@ app.use(express.json());
 
 app.use('/', mainRouter);
 app.use('/register', registerRouter);
+app.use('/form', formRouter);
 
 app.use((req, res, next) => {
   console.log('req.session=>>>', req.session);
