@@ -18,7 +18,7 @@ module.exports = function Login() {
               <input type="password" className="form-control" id="exampleInputPassword1" name="password" />
             </label>
           </div>
-          <button type="submit" className="btn btn-primary btn-login">Enter</button>
+          <button type="submit" className="btn btn-primary btn-login">SEND</button>
         </form>
       </div>
     </Layout>
