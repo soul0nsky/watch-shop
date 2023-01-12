@@ -18,7 +18,7 @@ module.exports = function Footer() {
         </li>
 
         <li className="nav-item">
-          <a href="https://bit.ly/3IFNXVJ" className="nav-link px-2 text-muted" title="Кликай сюда">
+          <a href="https://bit.ly/3IFNXVJ" className="nav-link px-2 text-muted" title="Кликай вот сюда">
             Adress
           </a>
         </li>
