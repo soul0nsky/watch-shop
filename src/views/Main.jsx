@@ -26,8 +26,11 @@ module.exports = function Main({ admin, watches }) {
             <h1>МАГАЗИН НАРУЧНЫХ ЧАСОВ</h1>
             <h3>ЭКСКЛЮЗИВНОЙ РУЧНОЙ РАБОТЫ</h3>
             <p className="line-break1" />
-            <span type="submit" data-type="contact-button" className="pulse-button">НАПИШИТЕ</span>
           </header>
+        </div>
+
+        <div className="writeUs">
+          <span type="submit" data-type="contact-button" className="pulse-button">НАПИШИТЕ НАМ</span>
         </div>
 
         {/** первый,верхний параллакс */}
@@ -41,7 +44,7 @@ module.exports = function Main({ admin, watches }) {
         {/** блок "О нас" - заголовок */}
         <section>
           <div id="about" className="about">
-            <p2>О нас</p2>
+            <p2>About us</p2>
           </div>
         </section>
 
