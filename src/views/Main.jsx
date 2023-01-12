@@ -25,7 +25,7 @@ module.exports = function Main({ admin, watches }) {
             <h1>МАГАЗИН НАРУЧНЫХ ЧАСОВ</h1>
             <h3>ЭКСКЛЮЗИВНОЙ РУЧНОЙ РАБОТЫ</h3>
             <p className="line-break1" />
-            <button5 type="submit" data-type="contact-button" className="btn-one">Связаться с нами</button5>
+            <span type="submit" data-type="contact-button" className="pulse-button">НАПИШИТЕ</span>
           </header>
         </div>
 
