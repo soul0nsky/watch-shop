@@ -25,7 +25,7 @@ module.exports = function FormOrder() {
               type="text"
               id="form2Example1"
               className="form-control"
-              name="userName"
+              name="user_name"
             />
           </div>
           <div className="form-outline mb-4">
