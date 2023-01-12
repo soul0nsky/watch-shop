@@ -19,11 +19,12 @@ module.exports = function Main({ admin }) {
 
         <div className="Logo">
           <header>
-            <img src="/img/pexels-ruslan-alekso-1401847.jpg" width="100px" height="100px" align="left" alt="watch" />
+            <img src="/img/pexels-ruslan-alekso-1401847.jpg" width="150px" height="150px" align="left" alt="watch" />
             <br />
             <h1>МАГАЗИН НАРУЧНЫХ ЧАСОВ</h1>
             <h3>ЭКСКЛЮЗИВНОЙ РУЧНОЙ РАБОТЫ</h3>
-            <p className="line-break1 margin-top-20" />
+            <p className="line-break1" />
+            <button5 type="submit" data-type="contact-button" className="btn-one">Связаться с нами</button5>
           </header>
         </div>
 
