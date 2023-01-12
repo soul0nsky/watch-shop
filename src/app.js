@@ -13,6 +13,7 @@ const mainRouter = require('./routes/router.main');
 const loginRouter = require('./routes/router.login');
 const logoutRouter = require('./routes/router.logout');
 const formRouter = require('./routes/router.form');
+const orderRouter = require('./routes/router.order');
 
 const app = express();
 const { PORT, SESSION_SECRET } = process.env;
@@ -48,6 +49,7 @@ app.use('/', mainRouter);
 app.use('/form', formRouter);
 app.use('/admin', loginRouter);
 app.use('/admin', logoutRouter);
+app.use('/order', orderRouter);
 
 app.use((req, res, next) => {
   console.log('req.session=>>>', req.session);
