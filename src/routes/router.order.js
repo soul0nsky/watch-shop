@@ -6,7 +6,6 @@ const { User } = require('../../db/models');
 
 router.get('/', (req, res) => {
   try {
-    console.log(123455677);
     renderTemplate(Order, {}, res);
   } catch (error) {
     console.log('======> error', error);
@@ -14,9 +13,12 @@ router.get('/', (req, res) => {
 });
 
 router.post('/', async (req, res) => {
-  console.log(req.body);
-  const newUser = await User.create(req.body)
-  res.json(newUser);
+  try {
+    const newUser = await User.create(req.body);
+    res.redirect('/');
+  } catch (error) {
+    console.log('========>  router.oder  error', error);
+  }
 });
 
 module.exports = router;

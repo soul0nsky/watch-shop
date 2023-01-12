@@ -40,7 +40,8 @@ module.exports = function Layout({ children, admin }) {
           </nav>
 
         )}
-        { children }
+
+        <main className="main-container">{ children }</main>
       </body>
 
       <footer className="py-3 my-4">

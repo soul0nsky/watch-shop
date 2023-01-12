@@ -5,8 +5,8 @@ module.exports = function FormOrder() {
   return (
     <Layout>
       <div className="form-container registration">
-        
-        <form name="fetchOrder" action="/" method="POST">
+
+        <form name="formOrder" action="/order" method="POST" data-type="form-order">
           {/* <div className="form-outline mb-4">
             <input
               type="url"
@@ -25,7 +25,7 @@ module.exports = function FormOrder() {
               type="text"
               id="form2Example1"
               className="form-control"
-              name="user_name"
+              name="userName"
             />
           </div>
           <div className="form-outline mb-4">
@@ -65,6 +65,7 @@ module.exports = function FormOrder() {
             type="submit"
             data-type="login-button"
             className="btn btn-primary btn-block mb-4"
+            data-type="form-order-btn"
           >
             Заказать
           </button>

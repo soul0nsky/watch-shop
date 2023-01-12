@@ -3,7 +3,6 @@ const React = require('react');
 
 module.exports = function WatchCard({ watch }) {
   const { id, watch_name: title, description } = watch;
-  console.log(id);
   return (
     <div className="watch-card card text-center mb-5" style={{ width: '30rem' }}>
       <div>
@@ -12,7 +11,7 @@ module.exports = function WatchCard({ watch }) {
       <div className="card-body">
         <h5 className="card-title">{title}</h5>
         <p className="card-text">{description}</p>
-        <a href="#0" className="btn btn-primary">Заказать</a>
+        <a href="/order" className="btn btn-primary">ХОЧУ</a>
       </div>
     </div>
   );
