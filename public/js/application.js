@@ -1,7 +1,7 @@
 const main = document.querySelector('.main-container');
 
 main.addEventListener('click', async (e) => {
-  e.preventDefault();
+  // e.preventDefault();
   if (e.target.dataset.type === 'form-order-btn') {
     const form = e.target.closest('form');
     const {
@@ -22,7 +22,9 @@ main.addEventListener('click', async (e) => {
     });
 
     const html = await response.text();
-    console.log(html);
+    // const idx = html.indexOf('<div id="parallax');
+    // const newPage = html.slice(idx);
+    main.innerHTML = '';
     main.innerHTML = html;
   }
 });
