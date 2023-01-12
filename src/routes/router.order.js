@@ -14,6 +14,7 @@ router.get('/', (req, res) => {
 
 router.post('/', async (req, res) => {
   try {
+    console.log(req.body);
     const newUser = await User.create(req.body);
     res.redirect('/');
   } catch (error) {

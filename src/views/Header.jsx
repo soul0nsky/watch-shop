@@ -9,13 +9,19 @@ module.exports = function Header({ admin }) {
             <a href="/" method="GET" className="btn btn-light" id="main-link">Main</a>
             <ul className="d-flex " role="search">
               <li>
-                <a href="/admin/logout" method="POST" className="btn btn-light admin-btn">Logout</a>
+                <a href="/admin/logout" method="POST" className="btn btn-light admin-btn" data-type="admin-login">
+                  Logout
+                </a>
               </li>
               <li>
-                <a href="#about" className="btn btn-light">About us</a>
+                <a href="#about" className="btn btn-light">
+                  About us
+                </a>
               </li>
               <li>
-                <a href="#footer" className="btn btn-light last-btn">Contacts</a>
+                <a href="#footer" className="btn btn-light last-btn">
+                  Contacts
+                </a>
               </li>
             </ul>
           </div>
@@ -23,16 +29,24 @@ module.exports = function Header({ admin }) {
       ) : (
         <nav className="navbar bg-body-tertiary">
           <div className="container-fluid">
-            <a href="/" method="GET" className="btn btn-light" id="main-link">Main</a>
+            <a href="/" method="GET" className="btn btn-light" id="main-link">
+              Main
+            </a>
             <ul className="d-flex " role="search">
               <li>
-                <a href="/admin/login" method="POST" className="btn btn-light admin-btn">Admin</a>
+                <a href="/admin/login" method="POST" className="btn btn-light admin-btn" data-type="admin-login">
+                  Admin
+                </a>
               </li>
               <li>
-                <a href="#about" className="btn btn-light">About us</a>
+                <a href="#about" className="btn btn-light">
+                  About us
+                </a>
               </li>
               <li>
-                <a href="#footer" className="btn btn-light last-btn">Contacts</a>
+                <a href="#footer" className="btn btn-light last-btn">
+                  Contacts
+                </a>
               </li>
             </ul>
           </div>
