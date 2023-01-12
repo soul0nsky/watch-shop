@@ -18,6 +18,7 @@ module.exports = function Main({ admin, watches }) {
 
       <div id="parallax-shop-of-watch">
 
+        {/** верхний блок с названием и логотипом */}
         <div className="Logo">
           <header>
             <img src="/img/pexels-ruslan-alekso-1401847.jpg" width="150px" height="150px" align="left" alt="watch" />
@@ -29,6 +30,7 @@ module.exports = function Main({ admin, watches }) {
           </header>
         </div>
 
+        {/** первый,верхний параллакс */}
         <section>
           <div className="parallax-one">
             <h2>АКТУАЛЬНЫЕ МОДЕЛИ</h2>
@@ -36,12 +38,14 @@ module.exports = function Main({ admin, watches }) {
           </div>
         </section>
 
+        {/** блок "О нас" - заголовок */}
         <section>
           <div className="about">
             <p2>О нас</p2>
           </div>
         </section>
 
+        {/** блок "О нас" - текст */}
         <section>
           <div className="block">
             <p>
@@ -55,6 +59,13 @@ module.exports = function Main({ admin, watches }) {
             <p className="line-break margin-top-20" />
           </div>
         </section>
+
+        {/** второй,нижний параллакс */}
+        <section>
+          <div className="parallax-two" />
+        </section>
+
+        {/** блок "Коллекция часов" */}
         <div className="container-fluid d-flex flex-wrap justify-content-around">
           {watches ? (
             watches.map((watch) => (
