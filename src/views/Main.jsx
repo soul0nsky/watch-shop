@@ -15,7 +15,6 @@ module.exports = function Main({ admin, watches }) {
         </div>
 
       </div> */}
-
       <div id="parallax-shop-of-watch">
 
         <div className="Logo">

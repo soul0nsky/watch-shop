@@ -40,12 +40,12 @@ module.exports = function Layout({ children, admin }) {
           </nav>
 
         )}
-        { children }
+
+        <main className="main-container">{ children }</main>
       </body>
 
       <footer className="py-3 my-4">
         <ul className="nav justify-content-center border-bottom pb-3 mb-3">
-
 
           <li className="nav-item">
             <a href="tel:+74999386824" className="nav-link px-2 text-muted" title="Позвони нам!">
@@ -76,7 +76,6 @@ module.exports = function Layout({ children, admin }) {
               Back to top
             </a>
           </li>
-
 
         </ul>
         <p className="text-center text-muted">&copy; 2023 Exclusive Watch Company, Inc</p>
