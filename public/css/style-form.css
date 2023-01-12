@@ -85,3 +85,20 @@ ul .last-btn {
   color: rgb(202, 165, 42);
   padding-bottom: 50px;
 }
+
+.btn-primary {
+  --bs-btn-bg: none;
+}
+
+.card{ 
+  --bs-card-bg: rgba(255, 255, 255, 0.1);
+}
+
+.card-body a.btn {
+  background-color: rgba(160, 113, 240, 0.9);
+  box-shadow:  0 0 7px #bbbbbb;
+}
+
+.card-title {
+  color:rgba(209, 209, 209, 0.9);
+}
