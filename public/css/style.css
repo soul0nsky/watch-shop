@@ -44,7 +44,7 @@ html, body {
 }
 
 
-#parallax-shop-of-watch img {
+#parallax-shop-of-watch .parallax-img {
   margin-left: 10px;
   margin-right: 30px;
   border-radius: 100px;
