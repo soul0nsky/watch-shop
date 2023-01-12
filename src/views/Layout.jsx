@@ -33,7 +33,7 @@ module.exports = function Layout({ children, admin }) {
               <a href="/" className="btn btn-outline-primary">Главная</a>
               <form className="d-flex " role="search">
                 <a href="/admin/login" className="btn btn-outline-danger">admin</a>
-                <a href="#0" className="btn btn-outline-primary" type="submit">О нас</a>
+                <a href="#about" className="btn btn-outline-primary" type="submit">О нас</a>
                 <a href="#0" className="btn btn-outline-primary" type="submit">Контакты</a>
               </form>
             </div>
