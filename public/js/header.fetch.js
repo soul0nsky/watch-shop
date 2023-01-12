@@ -5,7 +5,7 @@ const header = document.getElementById('header-page');
 /* eslint-disable no-undef */
 
 header.addEventListener('click', async (e) => {
-  e.preventDefault();
+  // e.preventDefault();
 
   if (e.target.id === 'main-link') {
     const response = await fetch(e.target.href);
