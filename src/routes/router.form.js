@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const renderTemplate = require('../lib/renderTemplate');
-const Form = require('../views/Form');
+const Form = require('../views/Forms/Form');
 
 router.get('/', (req, res) => {
   try {
@@ -9,7 +9,6 @@ router.get('/', (req, res) => {
     console.log('======> error', error);
   }
 });
-
 
 // router.post('/', async (req, res) => {
 //   const {name, email, phone} = req.body

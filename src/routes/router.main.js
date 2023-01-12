@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const renderTemplate = require('../lib/renderTemplate');
-const Main = require('../views/Main');
+const Main = require('../views/Main/Main');
 const { Watch } = require('../../db/models');
 
 router.get('/', async (req, res) => {

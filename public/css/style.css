@@ -2,23 +2,19 @@ html, body {
   text-align: center;
   background-image:url(/img/pexels-cottonbro-studio-5026973.jpg);
   background-position:inherit;
-  font-size: 10px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.form-container {
-  width: 400px;
-  border: 2px solid #0d6efd;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 100px;
-  padding: 10px;
+header li {
+  text-decoration: none;
+  list-style-type: none;
+
 }
 
 @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
 @import url(https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Bubblegum+Sans|Caveat+Brush|Chewy|Lobster+Two);
-@import url(https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap)
+@import url(https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap);
 
 /* Override UGG site */
 /* #main {
