@@ -44,7 +44,7 @@ module.exports = function Main({ admin, watches }) {
         {/** блок "О нас" - заголовок */}
         <section>
           <div id="about" className="about">
-            <p2>About us</p2>
+            <p2>О нас</p2>
           </div>
         </section>
 

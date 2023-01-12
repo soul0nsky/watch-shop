@@ -1,6 +1,6 @@
 html, body {
   text-align: center;
-  background-image:url(/img/pexels-jonas-ferlin-2090763.jpg);
+  background-image:url(/img/pexels-cottonbro-studio-5026973.jpg);
   background-position:inherit;
   font-size: 10px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -21,11 +21,12 @@ html, body {
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
 @import url(https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Bubblegum+Sans|Caveat+Brush|Chewy|Lobster+Two);
 @import url(https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap)
+
 /* Override UGG site */
-#main {
+/* #main {
   width: 100%; 
   padding:0;
-}
+} */
 
 .content-asset p {margin:0 auto;}
 .breadcrumb {display:none;}
@@ -126,7 +127,7 @@ html, body {
   letter-spacing:8px; 
   text-transform: uppercase; 
   text-shadow: 1px 1px 0px black;
-  color:rgb(86, 70, 18);
+  color:rgb(175, 142, 36);
   padding-bottom: 5px;
   padding-top: 5px;
 }
@@ -161,10 +162,11 @@ html, body {
   /* блок О нас */
 
 #parallax-shop-of-watch p {
-  font-family:'Source Sans Pro', sans-serif; 
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-weight:400; 
   font-size:14px; 
   line-height:24px;
+  color:rgb(213, 179, 39);
 }
 
 
@@ -174,14 +176,14 @@ html, body {
   justify-content:center;
   padding-top: 80px;
   padding-bottom: 20px;
-  font-family: 'Covered By Your Grace', cursive;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-size:14px; 
   line-height:0; 
   font-weight:400;
   font-size: 24px; 
   letter-spacing:8px; 
   text-transform: uppercase; 
-  color:black;
+  color:rgb(213, 179, 39);
 }
 
 
@@ -203,7 +205,7 @@ html, body {
   letter-spacing: -1px;
   color: rgb(10, 0, 0);
   border-radius: 100%;
-  background: #e5f00f;
+  background: #dee91a;
   cursor: pointer;
   box-shadow: 0 0 0 0 rgba(235, 226, 122, 0.5);
   -webkit-animation: pulse 1.8s infinite;
@@ -318,20 +320,20 @@ html, body {
   opacity: 0.75;
 }
 
-/* Extras -line (верхняя линия под строкой "эксклюзивной ручной работы" */
+/* Extras -line (нижняя линия под блоком "О нас" */
 /**************************/
 #parallax-shop-of-watch .line-break {
-  border-bottom:1px solid black; 
+  border-bottom:1px solid rgb(203, 178, 36); 
   width: 300px; margin:0 auto;
 }
 
 
-/* Extras -line1  (нижняя линия в блоке О нас */
+/* Extras -line1  (верхняя линия под надписью "Эксклюзивной ручной работы"*/
 #parallax-shop-of-watch .line-break1 {
   padding-top: 5px;
   position:relative;
   left: -230px;
-  border-bottom:1px solid black; 
+  border-bottom:1px solid rgb(0, 0, 0); 
   width: 390px; 
   margin:0 auto;
 }
@@ -350,7 +352,8 @@ footer {
   font-weight: bolder;
   font-size: 20px;
   font-family:Arial, Helvetica, sans-serif;
-  text-shadow: 1px 1px 0px black;
+  text-shadow: 0px 1px 0px rgb(246, 199, 57);
+  color:aliceblue;
 }
 
 p14 {

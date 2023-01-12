@@ -19,22 +19,22 @@ module.exports = function Layout({ children, admin }) {
 
           <nav className="navbar bg-body-tertiary">
             <div className="container-fluid">
-              <a href="/" className="btn btn-secondary">Main</a>
+              <a href="/" className="btn btn-light">Main</a>
               <form className="d-flex " role="search">
-                <a href="/admin/logout" className="btn btn-outline-danger">logout</a>
-                <a href="#0" className="btn btn-outline-primary" type="submit">About us</a>
-                <a href="#0" className="btn btn-outline-primary" type="submit">Contacts</a>
+                <a href="/admin/logout" className="btn btn-light">logout</a>
+                <a href="#0" className="btn btn-light" type="submit">About us</a>
+                <a href="#0" className="btn btn-light" type="submit">Contacts</a>
               </form>
             </div>
           </nav>
         ) : (
           <nav className="navbar bg-body-tertiary">
             <div className="container-fluid">
-              <a href="/" className="btn btn-secondary">Main</a>
+              <a href="/" className="btn btn-light">Main</a>
               <form className="d-flex " role="search">
-                <a href="/admin/login" className="btn btn-outline-danger">Admin</a>
-                <a href="#about" className="btn btn-outline-primary" type="submit">About us</a>
-                <a href="#0" className="btn btn-outline-primary" type="submit">Contacts</a>
+                <a href="/admin/login" className="btn btn-light">Admin</a>
+                <a href="#about" className="btn btn-light" type="submit">About us</a>
+                <a href="#0" className="btn btn-light" type="submit">Contacts</a>
               </form>
             </div>
           </nav>
