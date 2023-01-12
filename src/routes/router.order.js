@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const renderTemplate = require('../lib/renderTemplate');
-const Order = require('../views/FormOrder');
+const Order = require('../views/Forms/FormOrder');
 
 const { User } = require('../../db/models');
 
