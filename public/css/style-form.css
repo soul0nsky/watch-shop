@@ -10,20 +10,24 @@
   0 0 25px #bbbbbb; 
 }
 
-
 .main-container {
   display: flex;
   justify-content: center;
   width: 100%;
 }
 
+
+
 .form-container {
   width: 400px;
-  border: 2px solid #0d6efd;
+  border: 2px solid rgb(202, 165, 42);
   margin-left: auto;
   margin-right: auto;
   margin-top: 100px;
-  padding: 10px;
+  padding: 20px;
+  border-radius: 20px;
+  color: rgb(202, 165, 42);
+  box-shadow: 0 0 5px #bbbbbb, 0 0 25px #bbbbbb;
 }
 
 a {
