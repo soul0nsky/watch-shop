@@ -1,23 +1,375 @@
-body {
+html, body {
   text-align: center;
+  background-image:url(/img/pexels-cottonbro-studio-5026973.jpg);
+  background-position:inherit;
+  font-size: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.register-box {
+.form-container {
   width: 400px;
   border: 2px solid #0d6efd;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 200px;
+  margin-top: 100px;
   padding: 10px;
 }
 
-.main-container {
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Bubblegum+Sans|Caveat+Brush|Chewy|Lobster+Two);
+@import url(https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap)
+
+/* Override UGG site */
+/* #main {
+  width: 100%; 
+  padding:0;
+} */
+
+.content-asset p {margin:0 auto;}
+.breadcrumb {display:none;}
+
+/* Helpers */
+/**************************/
+.margin-top-10 {padding-top:10px;}
+.margin-bot-10 {padding-bottom:10px;}
+
+#parallax-shop-of-watch header {
+  padding-bottom: 27px;
+  padding-top: 10px;
+}
+
+#parallax-shop-of-watch #myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
+#parallax-shop-of-watch .parallax-img {
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 100px;
   display: flex;
-  justify-content: center;
-  width: 100%;
+  justify-content:flex-start;
+  left:50px;
 }
-.greeting-main h1{
-  display: block;
-  width: 600px;
-  margin-top: 200px;
+
+
+
+/* Typography */
+/**************************/
+
+/* МАГАЗИН НАРУЧНЫХ ЧАСОВ */
+#parallax-shop-of-watch h1 {
+  display: flex;
+  justify-content:flex-start;
+  font-family:'Oswald', sans-serif; 
+  font-size:50px; 
+  font-weight:400; 
+  padding:0; 
+  margin:0;
+  text-transform: uppercase;
+  z-index:10; 
+  opacity:.9;
+  background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+
+  -webkit-background-clip: text; 
+  background-clip: text; 
+  color: transparent;
+
+  background-size: 300%;
+  background-position: -100%;  
+  
+  animation: animatedText 3s infinite alternate-reverse;
 }
+
+/* АКТУАЛЬНЫЕ МОДЕЛИ */
+#parallax-shop-of-watch h2 {
+  font-family:'Oswald', sans-serif; 
+  font-size:40px; 
+  letter-spacing:10px; 
+  text-align:right; 
+  color:white; 
+  font-weight:400; 
+  text-transform:uppercase; 
+  z-index:10; 
+  opacity:.9;
+  background-image: linear-gradient(to right, #3aa7bd, #ee9e78, #ea4929, #1371a8);
+  -webkit-background-clip: text; 
+  background-clip: text; 
+  color: transparent;
+  
+  background-size: 300%;
+  background-position: -100%;  
+  
+  animation: animatedText 10s infinite alternate-reverse;
+}
+
+@keyframes animatedText{
+  to{
+    background-position: 100%; 
+  }
+}
+
+/* ЭКСКЛЮЗИВНОЙ РУЧНОЙ РАБОТЫ */
+#parallax-shop-of-watch h3 {
+  position: relative;
+  left: -320px;
+  font-family:'Oswald', sans-serif; 
+  font-size:15px; 
+  line-height:0; 
+  font-weight:400; 
+  letter-spacing:8px; 
+  text-transform: uppercase; 
+  text-shadow: 1px 1px 0px black;
+  color:rgb(175, 142, 36);
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+/* ДЛЯ УСПЕШНОЙ ЖИЗНИ */
+  #parallax-shop-of-watch h4 {
+    font-family:'Oswald', sans-serif; 
+    font-size:30px; 
+    letter-spacing:10px; 
+    text-align:right; 
+    color:white; 
+    font-weight:600; 
+    text-transform:uppercase; 
+    z-index:10; 
+    opacity:.9;
+    background-image: linear-gradient(to right, #3aa7bd, #ee9e78, #ea4929, #1371a8);
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    color: transparent;
+    background-size: 300%;
+    background-position: -100%;  
+    animation: animatedText 10s infinite alternate-reverse;
+  }  
+
+  @keyframes animatedText{
+    to{
+      background-position: 100%; 
+    }
+  }
+  
+
+  /* блок О нас */
+
+#parallax-shop-of-watch p {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight:400; 
+  font-size:14px; 
+  line-height:24px;
+  color:rgb(213, 179, 39);
+}
+
+
+/* Заголовок "О НАС "*/
+#parallax-shop-of-watch p2 {
+  display: flex;
+  justify-content:center;
+  padding-top: 80px;
+  padding-bottom: 20px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size:14px; 
+  line-height:0; 
+  font-weight:400;
+  font-size: 24px; 
+  letter-spacing:8px; 
+  text-transform: uppercase; 
+  color:rgb(213, 179, 39);
+}
+
+
+/* кнопка НАПИШИТЕ НАМ */
+
+.writeUs {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  position:relative;
+  top:-120px;
+  right: -1300px;
+  width: 150px;
+  height: 150px;
+  font-size: 18px;
+  font-weight:bold;
+  font-family: "Trebuchet MS", sans-serif;
+  line-height: 100px;
+  letter-spacing: -1px;
+  color: rgb(10, 0, 0);
+  border-radius: 100%;
+  background: #dee91a;
+  cursor: pointer;
+  box-shadow: 0 0 0 0 rgba(235, 226, 122, 0.5);
+  -webkit-animation: pulse 1.8s infinite;
+}
+.writeUs:hover {
+  -webkit-animation: none;
+}
+@keyframes pulse {
+  0% {
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  70% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    box-shadow: 0 0 0 50px rgba(90, 153, 212, 0);
+  }
+  100% {
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
+  }
+}
+
+
+
+
+
+.first-character {
+  font-weight:400; 
+  float: left; 
+  font-size: 84px; 
+  line-height: 64px; 
+  padding-top: 4px; 
+  padding-right: 8px; 
+  padding-left: 3px; 
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.sc {color: #3b8595;}
+.ny {color: #3d3c3a;}
+.atw {color: #c48660;}
+
+
+
+/* Section - Title (Название интернет магазина)*/
+/**************************/
+#parallax-shop-of-watch .title {
+  background: rgb(252, 250, 250); 
+  padding: 60px; margin:0 auto; 
+  text-align:center;}
+#parallax-shop-of-watch .title h1 {
+  font-size:35px; 
+  letter-spacing:8px;}
+
+
+
+
+
+/* Section - Block   (О нас) */
+/**************************/
+#parallax-shop-of-watch .block {
+  border-radius: 10px;
+  padding-bottom: 10px;
+  opacity: 0.75;
+  padding: 60px; 
+  width:820px; 
+  margin:0 auto; 
+  text-align:justify;}
+
+
+
+/* Section - Parallax */
+/**************************/
+#parallax-shop-of-watch .parallax-one {
+  padding-top: 150px; 
+  padding-bottom: 150px; 
+  overflow: hidden; 
+  position: relative; 
+  width: 100%; 
+  border-radius: 8px;
+  background-image: url(/img/pexels-quang-viet-nguyen-12835315.jpg); 
+  background-attachment: fixed; 
+  background-size: cover; 
+  -moz-background-size: cover; 
+  -webkit-background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: top center;
+  opacity: 0.75;
+}
+
+#parallax-shop-of-watch .parallax-two {
+  padding-top: 200px; 
+  padding-bottom: 200px; 
+  overflow: hidden; 
+  position: relative; 
+  width: 100%; 
+  border-radius: 8px;
+  background-image: url(/img/pexels-george-zografidis-13919730.jpg); 
+  background-attachment: fixed; 
+  background-size: cover; 
+  -moz-background-size: cover; 
+  -webkit-background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: top center;
+  opacity: 0.75;
+}
+
+/* Extras -line (нижняя линия под блоком "О нас" */
+/**************************/
+#parallax-shop-of-watch .line-break {
+  border-bottom:1px solid rgb(203, 178, 36); 
+  width: 300px; margin:0 auto;
+}
+
+
+/* Extras -line1  (верхняя линия под надписью "Эксклюзивной ручной работы"*/
+#parallax-shop-of-watch .line-break1 {
+  padding-top: 5px;
+  position:relative;
+  left: -230px;
+  border-bottom:1px solid rgb(0, 0, 0); 
+  width: 390px; 
+  margin:0 auto;
+}
+
+
+/*  блок со списком часов */
+#parallax-shop-of-watch .container-fluid {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+/* нижний футтер */
+
+footer {
+  font-weight: bolder;
+  font-size: 20px;
+  font-family:Arial, Helvetica, sans-serif;
+  text-shadow: 0px 1px 0px rgb(246, 199, 57);
+  color:aliceblue;
+}
+
+p14 {
+  font-size: 15px;
+}
+
+
+/* Media Queries */
+/**************************/
+@media screen and (max-width: 959px) and (min-width: 768px) {
+  #parallax-shop-of-watch .block {padding: 40px; width:620px;}
+}
+@media screen and (max-width: 767px) {
+  #parallax-shop-of-watch .block {padding: 30px; width:420px;}
+  #parallax-shop-of-watch h2 {font-size:30px;}
+  #parallax-shop-of-watch .block {padding: 30px;}
+  #parallax-shop-of-watch .parallax-one, #parallax-shop-of-watch .parallax-two, #parallax-shop-of-watch .parallax-three {padding-top:100px; padding-bottom:100px;}
+}
+@media screen and (max-width: 479px) {
+  #parallax-shop-of-watch .block {padding: 30px 15px; width:290px;}
+};
