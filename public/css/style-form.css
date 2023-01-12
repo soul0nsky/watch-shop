@@ -25,9 +25,11 @@ a {
   width: 600px;
   margin-top: 200px;
 }
+
 .container-fluid {
   padding-bottom: 10px;
 }
+
 a.btn {
   width: 140px;
   text-transform: uppercase; 
@@ -64,4 +66,9 @@ a.btn:nth-child(3) {
 
 .btn-login {
   width: 120px;
+}
+
+.watch-img  {
+  width: 479px;
+  height: 700px;
 }
