@@ -18,7 +18,7 @@ module.exports = function Layout({ children, admin }) {
       </head>
       <body>
         <Header admin={admin} />
-        <main className="main-container">{ children }</main>
+        <main id="main-container">{ children }</main>
         <Footer />
       </body>
     </html>
