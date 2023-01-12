@@ -17,7 +17,7 @@ module.exports = function Layout({ children, admin }) {
       <body>
         {admin ? (
 
-          <nav className="navbar bg-body-tertiary">
+          <nav className="navbar bg-body-tertiary navbar-dark bg-dark">
             <div className="container-fluid">
               <a href="/" className="btn btn-light">Main</a>
               <form className="d-flex " role="search">
@@ -28,13 +28,14 @@ module.exports = function Layout({ children, admin }) {
             </div>
           </nav>
         ) : (
-          <nav className="navbar bg-body-tertiary">
+          <nav className="navbar bg-body-tertiary navbar-dark bg-dark">
             <div className="container-fluid">
               <a href="/" className="btn btn-light">Main</a>
               <form className="d-flex " role="search">
                 <a href="/admin/login" className="btn btn-light">Admin</a>
                 <a href="#about" className="btn btn-light" type="submit">About us</a>
                 <a href="#0" className="btn btn-light" type="submit">Contacts</a>
+                <i className="bi bi-cpu" />
               </form>
             </div>
           </nav>
