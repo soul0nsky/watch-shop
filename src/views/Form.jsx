@@ -55,7 +55,7 @@ module.exports = function Form() {
               type="text"
               id="form2Example1"
               className="form-control"
-              name="username"
+              name="text"
               placeholder="Описание часов"
             />
           </div>
@@ -64,7 +64,7 @@ module.exports = function Form() {
               type="text"
               id="form2Example1"
               className="form-control"
-              name="username"
+              name="href"
               placeholder="Вставить ссылку"
             />
           </div>
