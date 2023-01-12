@@ -1,6 +1,5 @@
 const React = require('react');
 // const Layout = require('./Layout');
-
 module.exports = function WatchCard({ watch }) {
   const { id, watch_name: title, description } = watch;
   return (
