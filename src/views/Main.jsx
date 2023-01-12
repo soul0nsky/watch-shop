@@ -1,8 +1,9 @@
 /* eslint-disable max-len */
 const React = require('react');
 const Layout = require('./Layout');
+const WatchCard = require('./WatchCard');
 
-module.exports = function Main({ admin }) {
+module.exports = function Main({ admin, watches }) {
   return (
     <Layout admin={admin}>
       {/* <div className="main-container container">
@@ -54,7 +55,15 @@ module.exports = function Main({ admin }) {
             <p className="line-break margin-top-20" />
           </div>
         </section>
-
+        <div className="container-fluid d-flex flex-wrap justify-content-around">
+          {watches ? (
+            watches.map((watch) => (
+              <WatchCard watch={watch} key={watch.id} />
+            ))
+          ) : (
+            <div>Часы не найдены</div>
+          )}
+        </div>
       </div>
     </Layout>
   );

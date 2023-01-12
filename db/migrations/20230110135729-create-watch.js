@@ -14,21 +14,6 @@ module.exports = {
       description: {
         type: Sequelize.STRING,
       },
-      link_1: {
-        type: Sequelize.STRING,
-      },
-      link_2: {
-        type: Sequelize.STRING,
-      },
-      link_3: {
-        type: Sequelize.STRING,
-      },
-      link_4: {
-        type: Sequelize.STRING,
-      },
-      link_5: {
-        type: Sequelize.STRING,
-      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,

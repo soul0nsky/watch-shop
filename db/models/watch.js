@@ -16,11 +16,6 @@ module.exports = (sequelize, DataTypes) => {
   Watch.init({
     watch_name: DataTypes.STRING,
     description: DataTypes.STRING,
-    link_1: DataTypes.STRING,
-    link_2: DataTypes.STRING,
-    link_3: DataTypes.STRING,
-    link_4: DataTypes.STRING,
-    link_5: DataTypes.STRING,
   }, {
     sequelize,
     modelName: 'Watch',
