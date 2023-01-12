@@ -19,22 +19,22 @@ module.exports = function Layout({ children, admin }) {
 
           <nav className="navbar bg-body-tertiary">
             <div className="container-fluid">
-              <a href="/" className="btn btn-outline-primary">Главная</a>
+              <a href="/" className="btn btn-secondary">Main</a>
               <form className="d-flex " role="search">
                 <a href="/admin/logout" className="btn btn-outline-danger">logout</a>
-                <a href="#0" className="btn btn-outline-primary" type="submit">О нас</a>
-                <a href="#0" className="btn btn-outline-primary" type="submit">Контакты</a>
+                <a href="#0" className="btn btn-outline-primary" type="submit">About us</a>
+                <a href="#0" className="btn btn-outline-primary" type="submit">Contacts</a>
               </form>
             </div>
           </nav>
         ) : (
           <nav className="navbar bg-body-tertiary">
             <div className="container-fluid">
-              <a href="/" className="btn btn-outline-primary">Главная</a>
+              <a href="/" className="btn btn-secondary">Main</a>
               <form className="d-flex " role="search">
-                <a href="/admin/login" className="btn btn-outline-danger">admin</a>
-                <a href="#about" className="btn btn-outline-primary" type="submit">О нас</a>
-                <a href="#0" className="btn btn-outline-primary" type="submit">Контакты</a>
+                <a href="/admin/login" className="btn btn-outline-danger">Admin</a>
+                <a href="#about" className="btn btn-outline-primary" type="submit">About us</a>
+                <a href="#0" className="btn btn-outline-primary" type="submit">Contacts</a>
               </form>
             </div>
           </nav>
@@ -72,13 +72,13 @@ module.exports = function Layout({ children, admin }) {
           </li>
 
           <li className="nav-item">
-            <a href="#" title="Вернуться наверх" className="nav-link px-2 text-muted">
+            <a href="/#" title="Вернуться наверх" className="nav-link px-2 text-muted">
               Back to top
             </a>
           </li>
 
         </ul>
-        <p className="text-center text-muted">&copy; 2023 Exclusive Watch Company, Inc</p>
+        <p14 className="text-center text-muted">&copy; 2023 Exclusive Watch Company, Inc</p14>
       </footer>
 
     </html>
