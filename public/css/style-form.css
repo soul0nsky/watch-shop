@@ -39,7 +39,7 @@ a.btn {
   text-transform: uppercase;
   font-size: 1.2em;
   padding: 10px;
-  border: 1px solid #330867;
+  border: 1px solid #030006;
 }
 
 a.btn:hover {
@@ -69,6 +69,12 @@ a.btn:nth-child(3) {
 }
 
 .watch-img  {
-  width: 479px;
-  height: 700px;
+  width: 300px;
+  height: 300px;
+}
+
+.login-box {
+  font-size: 15px;
+  color: rgb(202, 165, 42);
+  padding-bottom: 50px;
 }
