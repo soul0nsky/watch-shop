@@ -64,9 +64,9 @@ app.use((req, res, next) => {
 app.listen(PORT, async () => {
   try {
     await sequelize.authenticate();
-    console.log('Соединение с базой установлено!');
+    console.log('Соединенились с БД, и слава Богу!');
   } catch (err) {
     console.log(err, 'Error!');
   }
-  console.log(`Сервер поднят на ${PORT} порту!`);
+  console.log(`Сервер в приподнятом настроении на ${PORT} порту!`);
 });
