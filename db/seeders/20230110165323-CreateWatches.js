@@ -5,11 +5,6 @@ module.exports = {
     const watches = Array.from({ length: 15 }, () => ({
       watch_name: faker.company.companyName(),
       description: faker.commerce.productDescription(),
-      link_1: faker.image.imageUrl(),
-      link_2: faker.image.imageUrl(),
-      link_3: faker.image.imageUrl(),
-      link_4: faker.image.imageUrl(),
-      link_5: faker.image.imageUrl(),
       createdAt: new Date(),
       updatedAt: new Date(),
     }));
