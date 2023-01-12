@@ -4,14 +4,14 @@ html, body {
   background-position:inherit;
 }
 
-/* .form-container {
+.form-container {
   width: 400px;
   border: 2px solid #0d6efd;
   margin-left: auto;
   margin-right: auto;
   margin-top: 100px;
   padding: 10px;
-} */
+}
 
 @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
