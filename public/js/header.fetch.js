@@ -3,9 +3,8 @@ const header = document.getElementById('header-page');
 // main используется при подключении скрипта main.fetch.js
 // после раскоментирования строки 2 скрипт работать не будет
 
-
 header.addEventListener('click', async (e) => {
-  // e.preventDefault();
+  e.preventDefault();
 
   if (e.target.id === 'main-link') {
     const response = await fetch(e.target.href);
