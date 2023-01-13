@@ -70,7 +70,7 @@ module.exports = function Form() {
           </button>
           <button
             type="submit"
-            data-type="login-button"
+            data-type="form-button"
             className="btn btn-primary btn-block mb-4 col-5 mx-2"
           >
             Отправить

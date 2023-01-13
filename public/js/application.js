@@ -27,11 +27,11 @@ function addActiveClass(number) {
   sliderDots.item(number).classList.add('slider-dot-active');
 }
 
-sliderPrev.addEventListener('click', () => {
-  removeActiveClass(number);
-  number = getNextItem(--number, sliderItems.length);
-  addActiveClass(number);
-});
+// sliderPrev.addEventListener('click', () => {
+//   removeActiveClass(number);
+//   number = getNextItem(--number, sliderItems.length);
+//   addActiveClass(number);
+// });
 
 sliderNext.addEventListener('click', () => {
   removeActiveClass(number);

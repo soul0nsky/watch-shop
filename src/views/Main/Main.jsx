@@ -20,7 +20,9 @@ module.exports = function Main({ admin, watches }) {
         </div>
 
         <div className="writeUs">
-          <span type="submit" data-type="contact-button" className="pulse-button">НАПИШИТЕ НАМ</span>
+          <a href="/form" method="GET" className="pulse-button" id="contact" data-type="contact-button">
+            НАПИШИТЕ НАМ
+          </a>
         </div>
 
         {/** первый,верхний параллакс */}
