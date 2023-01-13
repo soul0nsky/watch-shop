@@ -2,6 +2,7 @@ const React = require('react');
 const Header = require('./Header');
 const Footer = require('./Footer');
 
+
 module.exports = function Layout({ children, admin }) {
   return (
     <html lang="en">
@@ -17,6 +18,7 @@ module.exports = function Layout({ children, admin }) {
         <script async src="/js/header.fetch.js" />
         <script defer src="/js/main.fetch.js" />
         <script defer src="/js/application.js" />
+        <script defer src="/js/form.fetch.js" />
         <title>{admin ? `Hi, ${admin}` : 'Hi, codder'}</title>
       </head>
       <body>

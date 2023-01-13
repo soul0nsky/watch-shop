@@ -13,14 +13,16 @@ module.exports = function Main({ admin, watches }) {
           <header>
             <img src="/img/pexels-ruslan-alekso-1401847.jpg" className="parallax-img" width="150px" height="150px" align="left" alt="watch" />
             <br />
-            <h1>МАГАЗИН НАРУЧНЫХ ЧАСОВ</h1>
+            <h1>МАГАЗИН НАРУЧНЫХ ЧАСОВВddddddd</h1>
             <h3>ЭКСКЛЮЗИВНОЙ РУЧНОЙ РАБОТЫ</h3>
             <p className="line-break1" />
           </header>
         </div>
 
         <div className="writeUs">
-          <span type="submit" data-type="contact-button" className="pulse-button">НАПИШИТЕ НАМ</span>
+          <a href="/form" method="GET" className="pulse-button" id="contact" data-type="contact-button">
+            НАПИШИТЕ НАМ
+          </a>
         </div>
 
         {/** первый,верхний параллакс */}
