@@ -4,6 +4,7 @@ const React = require('react');
 module.exports = function WatchCard({ watch }) {
   const { id, watch_name: title, description } = watch;
   return (
+
     <div className="watch-card card text-center slider-items">
       <div className="slider-item slider-item-active">
         <img src={`/img/watches/watch-${id}/1-photo.jpg`} className="watch-img card-img-top slider-image" alt="Наручные часы" />
