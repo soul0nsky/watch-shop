@@ -64,7 +64,7 @@ module.exports = function Main({ admin, watches }) {
         <div className="container-fluid d-flex flex-wrap justify-content-around">
           {watches ? (
             watches.map((watch) => (
-              <WatchCard watch={watch} key={watch.id} />
+              <WatchCard watch={watch} admin={admin} key={watch.id} />
             ))
           ) : (
             <div>Часы не найдены</div>

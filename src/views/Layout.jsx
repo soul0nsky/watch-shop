@@ -2,7 +2,6 @@ const React = require('react');
 const Header = require('./Header');
 const Footer = require('./Footer');
 
-
 module.exports = function Layout({ children, admin }) {
   return (
     <html lang="en">
@@ -15,7 +14,7 @@ module.exports = function Layout({ children, admin }) {
         <link href="/css/style-form.css" rel="stylesheet" />
         <link href="/css/normalize.css" rel="stylesheet" />
         <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossOrigin="anonymous" />
-        <script async src="/js/header.fetch.js" />
+        <script defer src="/js/header.fetch.js" />
         <script defer src="/js/main.fetch.js" />
         <script defer src="/js/application.js" />
         <script defer src="/js/form.fetch.js" />

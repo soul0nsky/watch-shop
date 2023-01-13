@@ -71,4 +71,9 @@ main.addEventListener('click', async (e) => {
       main.innerHTML = html.slice(from, to);
     }
   }
+
+  if (e.target.dataset.type === 'watch-delete') {
+    const cardWatch = e.target.closest('article');
+    cardWatch.remove();
+  }
 });
