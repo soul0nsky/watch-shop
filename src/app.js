@@ -1,5 +1,7 @@
 require('dotenv').config();
 const express = require('express');
+const bodyParser = require('body-parser');
+const mailer = require('./nodemailer');
 const createError = require('http-errors');
 const logger = require('morgan');
 const fs = require('fs');
@@ -41,7 +43,7 @@ app.use(logger('combined', { stream: accessLogStream }));
 app.use(logger('dev'));
 
 app.use(express.static(path.join(__dirname, '../public')));
-
+// app.use.apply(bodyParser.urlencoded({ extended: false }));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
