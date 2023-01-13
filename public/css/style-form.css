@@ -32,12 +32,6 @@ a {
   text-decoration: none;
 }
 
-.greeting-main h1{
-  display: block;
-  width: 600px;
-  margin-top: 200px;
-}
-
 .container-fluid {
   padding-bottom: 10px;
 }
@@ -52,6 +46,40 @@ a.btn {
   font-size: 1.2em;
   padding: 10px;
   border: 1px solid #030006;
+}
+
+#main-link {
+  width: 180px;
+  text-transform: uppercase; 
+  color: #010001;
+  padding: 0; 
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  padding: 10px;
+  border: 1px solid #281917;
+  font-family: 'Anton', sans-serif;
+  background-color: gold;
+  border-radius: 40px;
+}
+#main-link:hover {
+  background: #330867;
+  color: #fff;
+}
+
+ul a.btn {
+  width: 140px;
+  text-transform: uppercase; 
+  color: #010001;
+  padding: 0; 
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  padding: 10px;
+  border: 1px solid #281917;
+  font-family: 'Anton', sans-serif;
+  background-color: gold;
+  border-radius: 40px;
 }
 
 a.btn:hover {
