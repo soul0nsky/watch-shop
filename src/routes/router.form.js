@@ -15,11 +15,14 @@ router.post('/', (req, res) => {
   console.log(req.body.email);
   if (!req.body.username || !req.body.email || !req.body.phone) return res.sendStatus(400);
   const message = {
-    to: req.body.email,
-    subject: ' Поздравляем! Ваш заказ принят!',
-    text: ` Ваш заказ успешно принят в обработку!
-    Дождитесь звонка от сотрудника нашего магазина.
-    Данное письмо не требует ответа!`,
+    to: 'msolonsky@icloud.com',
+    subject: ' Параметры заказа',
+    text: `Данные заказчика:
+    name: ${req.body.username}
+    telephone: ${req.body.phone}
+    email: ${req.body.email}
+    text: ${req.body.text}
+    `,
   };
   mailer(message);
   res.redirect('/');
