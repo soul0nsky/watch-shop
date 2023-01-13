@@ -60,6 +60,7 @@ a.btn:hover {
 }
 
 ul .admin-btn:hover {
+  color: gold;
   background: #dc3545;
 }
 
@@ -204,5 +205,22 @@ ul .last-btn {
 
 .slider-dot:hover {
   background: #fff;
+}
+
+#main-order-btn:hover {
+  transition: 0.4s;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgb(213, 179, 39); 
+}
+
+.watch-delete-btn {
+  position: absolute;
+  content: "";
+  right: -5%;
+  top: -5%;
+
+  background: #dc3545;
+  z-index: 2;
+
 }
 
