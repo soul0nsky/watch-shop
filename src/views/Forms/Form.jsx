@@ -40,13 +40,6 @@ module.exports = function Form() {
               name="phone"
             />
           </div>
-          <button
-            type="submit"
-            data-type="login-button"
-            className="btn btn-primary btn-block mb-4"
-          >
-            Отправить
-          </button>
           <div className="form-outline mb-4">
             <label className="form-label" htmlFor="form2Example1">
               img.net
@@ -71,14 +64,14 @@ module.exports = function Form() {
           <button
             type="submit"
             data-type="login-button"
-            className="btn btn-primary btn-block mb-4"
+            className="btn btn-primary btn-block mb-4 col-5 mx-2"
           >
             Загрузить
           </button>
           <button
             type="submit"
             data-type="login-button"
-            className="btn btn-primary btn-block mb-4"
+            className="btn btn-primary btn-block mb-4 col-5 mx-2"
           >
             Отправить
           </button>

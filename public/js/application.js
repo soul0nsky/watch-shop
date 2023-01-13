@@ -1,30 +1,46 @@
-const main = document.querySelector('.main-container');
+/* eslint-disable no-plusplus */
+/* eslint-disable no-return-assign */
+/* eslint-disable no-shadow */
+const sliderPrev = document.querySelector('.slider-arrow-prev');
+const sliderNext = document.querySelector('.slider-arrow-next');
+const sliderItems = document.querySelectorAll('.slider-item');
+const sliderDots = document.querySelectorAll('.slider-dot');
 
-main.addEventListener('click', async (e) => {
-  // e.preventDefault();
-  if (e.target.dataset.type === 'form-order-btn') {
-    const form = e.target.closest('form');
-    const {
-      userName: { value: user_name },
-      lastname: { value: lastname },
-      phone: { value: phone },
-      email: { value: email },
-    } = form;
-    console.log(user_name, lastname, phone, email);
-    const response = await fetch('/order', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        user_name, lastname, phone, email,
-      }),
-    });
+let number = 0;
 
-    const html = await response.text();
-    // const idx = html.indexOf('<div id="parallax');
-    // const newPage = html.slice(idx);
-    main.innerHTML = '';
-    main.innerHTML = html;
+function getNextItem(number, maxSlide) {
+  if (number === maxSlide) {
+    return 0;
+  } if (number === -1) {
+    return maxSlide - 1;
   }
+  return number;
+}
+
+function removeActiveClass(number) {
+  sliderItems.item(number).classList.remove('slider-item-active');
+  sliderDots.item(number).classList.remove('slider-dot-active');
+}
+
+function addActiveClass(number) {
+  sliderItems.item(number).classList.add('slider-item-active');
+  sliderDots.item(number).classList.add('slider-dot-active');
+}
+
+sliderPrev.addEventListener('click', () => {
+  removeActiveClass(number);
+  number = getNextItem(--number, sliderItems.length);
+  addActiveClass(number);
+});
+
+sliderNext.addEventListener('click', () => {
+  removeActiveClass(number);
+  number = getNextItem(++number, sliderItems.length);
+  addActiveClass(number);
+});
+
+sliderDots.forEach((sliderDot) => sliderDot.onclick = function () {
+  removeActiveClass(number);
+  number = Array.from(sliderDots).indexOf(this);
+  addActiveClass(number);
 });
