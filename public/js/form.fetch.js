@@ -1,8 +1,6 @@
-
-
+/* eslint-disable no-undef */
 main.addEventListener('click', async (e) => {
- e.preventDefault();
- console.log('hello');
+  e.preventDefault();
 
   //* кнопка напишите нам
 
@@ -38,7 +36,7 @@ main.addEventListener('click', async (e) => {
         username: userName, email, phone, text, href,
       }),
     });
-    const html= await response.text();
+    const html = await response.text();
     const from = html.indexOf('<main');
     const to = html.indexOf('<footer');
     main.innerHTML = '';

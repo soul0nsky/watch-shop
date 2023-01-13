@@ -1,7 +1,7 @@
 const main = document.getElementById('main-container');
 
 main.addEventListener('click', async (e) => {
-  // e.preventDefault();
+  e.preventDefault();
 
   // кнопка "Хочу"
   if (e.target.dataset.type === 'main-order-btn') {
