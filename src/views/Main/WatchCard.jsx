@@ -39,7 +39,7 @@ module.exports = function WatchCard({ watch }) {
       <div className="card-body">
         <h5 className="card-title">{title}</h5>
         <p className="card-text">{description}</p>
-        <a href="/order" method="GET" className="btn btn-primary" data-type="main-order-btn">ХОЧУ</a>
+        <a id="main-order-btn" href="/order" method="GET" className="btn btn-primary" data-type="main-order-btn">ХОЧУ</a>
       </div>
 
     </article>

@@ -206,3 +206,9 @@ ul .last-btn {
   background: #fff;
 }
 
+#main-order-btn:hover {
+  transition: 0.4s;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgb(213, 179, 39); 
+}
+
