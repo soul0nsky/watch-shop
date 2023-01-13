@@ -1,6 +1,12 @@
+
 main.addEventListener('click', async (e) => {
   e.preventDefault();
   console.log('hello');
+=======
+/* eslint-disable no-undef */
+main.addEventListener('click', async (e) => {
+  e.preventDefault();
+
 
   //* кнопка напишите нам
 
