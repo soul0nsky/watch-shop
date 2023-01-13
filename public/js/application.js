@@ -1,9 +1,9 @@
+/* eslint-disable no-param-reassign */
 /* eslint-disable no-undef */
 /* eslint-disable no-plusplus */
 /* eslint-disable no-return-assign */
 /* eslint-disable no-shadow */
 let number = 0;
-console.log('========>  number', number);
 
 function getNextItem(number, maxSlide) {
   if (number === maxSlide) {

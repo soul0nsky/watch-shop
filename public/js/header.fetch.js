@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const header = document.getElementById('header-page');
 // const main = document.getElementById('main-container');
 // main используется при подключении скрипта main.fetch.js
